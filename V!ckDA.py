@@ -19,7 +19,7 @@ def local_css(file_path):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Chemin complet du fichier CSS sur votre ordinateur local
-css_path = "C:/Users/aubem/Desktop/VickDA-Presentation on WEBSITE/style/style.css"
+css_path = "C:/Users/aubem/Desktop/VickDA-Presentation on WEBSITE/style/style"
 
 # Charger le fichier CSS dans Streamlit
 local_css(css_path)
