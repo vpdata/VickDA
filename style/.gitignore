@@ -1,0 +1,25 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Ignore Python specific files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+env/
+venv/
+.venv/
+
+# Ignore other specific files/folders
+AppData/
+ntuser.dat
+ntuser.ini
