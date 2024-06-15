@@ -13,11 +13,12 @@ def load_lottieurl(url):
     return r.json()
 
 # Use local CSS
-def local_css(file_name):
-    with open(file_name) as f:
+def local_css(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-local_css("style")
+# Charge les CSS locaux
+local_css("images/style.css")  # Assurez-vous que le chemin correspond exactement à celui sur GitHub
 
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://lottie.host/d4b66f91-c56e-4055-8ab3-c74f425fcf51/w8r6sCmQyU.json")
