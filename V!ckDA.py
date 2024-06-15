@@ -13,16 +13,14 @@ def load_lottieurl(url):
     return r.json()
 
 
-# Définir la fonction pour charger le CSS local
-def local_css(file_path):
-    with open(file_path) as f:
+# Use local CSS
+def local_css(file_name):
+    with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# Chemin complet du fichier CSS sur votre ordinateur local
-css_path = "C:/Users/aubem/Desktop/VickDA-Presentation on WEBSITE/style/style"
 
-# Charger le fichier CSS dans Streamlit
-local_css(css_path)
+local_css("style/style.css")
+
 
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://lottie.host/d4b66f91-c56e-4055-8ab3-c74f425fcf51/w8r6sCmQyU.json")
